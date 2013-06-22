@@ -1,0 +1,18 @@
+For addresses %p
+For size %u or %lu //unsigned int or unsigned long int
+Never return reference(pointer) to local variable from a function --> pg-25
+#include <stdlib.h> // for dynamic memory allocation
+exit(1); to exit
+void pointer can be assigned to any type of pointer without typecasting but we do it for code readability
+A structure that contains pointers to structure of its own type is known as self referential structure
+  /* useful in implementing linked lists & trees */
+  struct tag{
+    char name[10];
+    int rollno;
+    int marks;
+    struct tag *p1;
+    struct tag *p2;
+    .
+    .
+    .
+  }
