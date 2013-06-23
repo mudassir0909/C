@@ -42,7 +42,7 @@ void remove_duplicates(struct node *start){
 }
 
 struct node *populate_list(struct node *start){
-  int arr[20]={1,1,1,2,2,3,3,3,3,3,3,5,4,4,6,6,6,6,6,6}, i;
+  int arr[20]={1,1,1,2,2,3,3,3,3,3,3,5,4,4,6,6,6,6,6}, i;
   struct node *tmp, *end;
   for(i=0;i<20;i++){
     tmp = (struct node *)malloc(sizeof(struct node));
